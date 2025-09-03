@@ -1,0 +1,469 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@300&family=Work+Sans:wght@200;400;500;600;700;800;900&display=swap');
+    *{
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+/* header */
+
+    header{
+        background-color: #f0f0f0;
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 200px;
+    }
+    .logo{
+        text-decoration: none;
+        color: #3a6cf4;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.8em;
+    }
+    .navigation a{
+        text-decoration: none;
+        color: #3a6cf4;
+        font-size: 1.1em;
+        font-weight: 500 ;
+        padding-left: 30px;
+        transition: .2s;
+    }    
+.navigation a:hover{
+    color: red;
+}
+
+/* ------------ */
+
+
+   /* main */
+
+
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(iamges/22222.jpg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.main h2{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.main h2 span{
+    color: #3a6cf4;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+
+.main h3{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-botn{
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.6s;
+}
+
+.main-botn:hover{
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.8em;
+    padding-right: 30px;
+
+}
+.social-icons a :hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em ;
+    font-weight: 700;
+    margin: 10px;
+}
+
+
+
+
+
+.projects {
+    background-color: #020d23;
+    padding: 40px 0;
+  }
+  
+  .projects .content {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* يخلي الكروت في النص */
+    gap: 20px; /* مسافة بين الكروت */
+  }
+
+  .project-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    width: 320px;         /* كان 280px -> كبرته شوية */
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-8px); /* أنضف من تكبير الكرت */
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 300px;        /* كان 180px -> زودته شوية */
+    overflow: hidden;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .project-info {
+    padding: 15px;
+  }
+  
+  .project-category {
+    font-size: 0.85em;
+    color: #444;
+    margin-bottom: 6px;
+  }
+  
+  .project-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .more-details {
+    text-decoration: none;
+    font-size: 0.85em;
+    color: #3a6cf4;
+  }
+  
+  .more-details:hover {
+    color: blue;
+  }
+  
+
+/* footer */
+.footer{
+    background-color: #020d23;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+
+
+}
+
+
+.footer-title span{
+    color: #3a6cf4;
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+}
+
+
+/* Skills section */
+#skills {
+  background: #f9f9f9;
+  padding: 100px 200px;
+}
+.skills-content {
+  max-width: 700px;
+  margin: auto;
+}
+.skill {
+  margin-bottom: 20px;
+}
+.skill p {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.progress {
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.progress span {
+  display: block;
+  height: 12px;
+  background: #3a6cf4;
+}
+
+/* About */
+#about .card {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Education & Experience */
+#education .card, #experience .card {
+  text-align: center;
+}
+
+
+
+
+/* About Section */
+#about .about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#about .about-card {
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+#about .about-card:hover {
+  transform: translateY(-5px);
+}
+
+#about .about-info {
+  text-align: left; /* عشان الكلام يبقى منظم على الشمال */
+}
+
+#about .about-info h3 {
+  color: #3a6cf4;
+  margin-bottom: 15px;
+  font-size: 1.6em;
+}
+
+#about .about-info p {
+  color: #333;
+  line-height: 1.8;
+  font-size: 1.1em;
+}
+
+
+
+
+/* Education Section */
+.education-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.edu-card {
+  background-color: #fff;
+  flex: 1 1 28%; /* يخلي الكرت حوالي تلت الصفحة */
+  min-width: 280px;
+  max-width: 350px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.edu-card:hover {
+  transform: translateY(-7px);
+}
+
+.edu-info {
+  text-align: left;
+}
+
+.edu-info h3 {
+  color: #3a6cf4;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.edu-info p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+
+/* Skills Section */
+.skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+
+.skill-info h3 {
+  color: #3a6cf4;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.skill-info p {
+  font-size: 1.05em;
+  color: #333;
+}
+
+
+.skills-row {
+    display: flex;
+    justify-content: space-between; /* توزيع الكروت */
+    gap: 20px; /* مسافة بينهم */
+  }
+  
+  .skill-card {
+    flex: 1; /* ياخدوا نفس العرض */
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+  }
+  
+
+
+
+
+
+
+
+
+  .work-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 كروت في صف واحد */
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .work-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+    text-align: left;
+
+  }
+  
+  .work-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .work-card h3 {
+    color: #3a6cf4;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  .work-card p {
+    font-size: 1.05em;
+    line-height: 1.6;
+    color: #333;
+  }
+  
