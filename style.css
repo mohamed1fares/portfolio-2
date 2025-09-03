@@ -407,12 +407,14 @@ section{
 
 .skills-row {
     display: flex;
-    justify-content: space-between; /* توزيع الكروت */
-    gap: 20px; /* مسافة بينهم */
+    flex-wrap: wrap;          /* ينزلوا تحت بعض لو مفيش مساحة */
+    justify-content: center;  /* يخليهم في النص */
+    gap: 20px;
   }
   
   .skill-card {
-    flex: 1; /* ياخدوا نفس العرض */
+    flex: 1 1 250px; /* أقل عرض 250px والكروت تتمدد حسب الشاشة */
+    max-width: 300px;
     background: #fff;
     padding: 20px;
     border-radius: 12px;
@@ -465,5 +467,83 @@ section{
     font-size: 1.05em;
     line-height: 1.6;
     color: #333;
+  }
+  
+  /* الموبايل (شاشات أقل من 768px) */
+  /* الموبايل (شاشات أقل من 768px) */
+  @media (max-width: 768px) {
+    header {
+      padding: 10px 20px;
+      flex-direction: column;
+    }
+  
+    .navigation a {
+      padding-left: 15px;
+      font-size: 1em;
+    }
+  
+    section {
+      padding: 60px 20px;
+    }
+  
+    .main h2 {
+      font-size: 1.2em;
+    }
+  
+    .main h2 span {
+      font-size: 2em;
+    }
+  
+    .main h3 {
+      font-size: 1.5em;
+    }
+  
+    /* خليهم كله عمود واحد */
+    .projects .content,
+    .education-content,
+    .skills-row,
+    .work-row {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .card,
+    .project-card,
+    .edu-card,
+    .skill-card,
+    .work-card {
+      width: 100% !important;
+      max-width: 100%;
+    }
+  
+    .footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+  }
+  
+  /* التابلت (شاشات أقل من 1024px) */
+  @media (max-width: 1024px) {
+    header {
+      padding: 10px 50px;
+    }
+  
+    section {
+      padding: 80px 50px;
+    }
+  
+    .work-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* صف فيه كارتين */
+      gap: 20px;
+    }
+  
+    .skills-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* اتنين جنب بعض */
+      gap: 20px;
+    }
   }
   
